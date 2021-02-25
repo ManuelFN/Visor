@@ -1,0 +1,31 @@
+﻿<Window x:Class="Visor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visor"
+        mc:Ignorable="d"
+        Title="Aplicación Cuentas Bancarias" Height="450" Width="550">
+    <Grid>
+        <Label x:Name="label_etiExist" Content="VISOR DE LAS CUENTAS EXISTENTES" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Número:" HorizontalAlignment="Left" Margin="73,81,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Roboto" Foreground="#FF575757"/>
+        <Label Content="Saldo:" HorizontalAlignment="Left" Margin="73,228,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Roboto" Foreground="#FF575757"/>
+        <Label Content="Nacionalidad:" HorizontalAlignment="Left" Margin="73,277,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Roboto" Foreground="#FF575757"/>
+        <Label Content="Fecha Apertura:" HorizontalAlignment="Left" Margin="73,177,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Roboto" Foreground="#FF575757"/>
+        <Label Content="Titular:" HorizontalAlignment="Left" Margin="73,132,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Roboto" Foreground="#FF575757"/>
+        <TextBox x:Name="txt_Numero" HorizontalAlignment="Left" Margin="217,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="27" IsReadOnly="True"/>
+        <TextBox x:Name="txt_Titulo" HorizontalAlignment="Left" Margin="217,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="27" IsReadOnly="True"/>
+        <TextBox x:Name="txt_Fecha" HorizontalAlignment="Left" Margin="217,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="27" IsReadOnly="True"/>
+        <TextBox x:Name="txt_Saldo" HorizontalAlignment="Left" Margin="217,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="27" IsReadOnly="True"/>
+        <TextBox x:Name="txt_Nacionalidad" HorizontalAlignment="Left" Margin="217,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="27" IsReadOnly="True"/>
+        <Button x:Name="btn_Siguiente" Content="Siguiente" HorizontalAlignment="Left" Margin="341,348,0,0" VerticalAlignment="Top" Height="36" Width="85" Background="#FF0099A2" Foreground="White" Click="btn_Siguiente_Click"/>
+        <Button x:Name="btn_Atras" Content="Atrás" HorizontalAlignment="Left" Margin="132,348,0,0" VerticalAlignment="Top" Height="36" Width="85" Background="#FF0099A2" Foreground="White" Visibility="Hidden" Click="btn_Atras_Click"/>
+        <Button x:Name="btn_Nueva" Content="Nueva" HorizontalAlignment="Left" Margin="341,348,0,0" VerticalAlignment="Top" Height="36" Width="85" Background="#FF0099A2" Foreground="White" Visibility="Hidden" Click="btn_Nueva_Click"/>
+        <Button x:Name="btn_Aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="341,348,0,0" VerticalAlignment="Top" Height="36" Width="85" Background="#FF0099A2" Foreground="White" Click="btn_Aceptar_Click" Visibility="Hidden"/>
+        <Button x:Name="btn_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="132,348,0,0" VerticalAlignment="Top" Height="36" Width="85" Background="#FF0099A2" Foreground="White" Click="btn_Cancelar_Click" Visibility="Hidden"/>
+        <Label x:Name="label_etiNueva" Content="VISOR DE LAS CUENTAS NUEVAS" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Visibility="Hidden"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="imagenes/fondo.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+    </Grid>
+</Window>
